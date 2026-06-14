@@ -1,20 +1,23 @@
 # Vibe Coding & Agentic AI Tips Cardnews
 
-기존 월례모임 발표 주제형 안은 폐기하고, 바로 따라 할 수 있는 바이브 코딩·agentic AI 실전 팁 카드뉴스로 재작성했습니다.
+SNUBH Vibe Lab 하우스 디자인 시스템(`Design/project/card_news`)으로 제작한 실전 팁 카드뉴스입니다.
 
-- 총 7개 토픽 × 5장 = 35장
-- 기존 6월 카드뉴스의 navy/cream/green 팔레트와 vibe.lab 브랜딩을 맞췄습니다.
-- 각 묶음은 cover → principle → example → template → VL check 흐름을 따릅니다.
+- 1080×1080 정사각형, navy/cream 교차, Inter + Pretendard + JetBrains Mono
+- 토픽 4개 × 4장 = 16장 (cover → 원리 → 적용 → summary)
+- 문체는 5월/6월 덱(mcp·paper 등)과 동일하게 `lead-in.` 굵게 + 설명 보조
 
 ## Topics
-1. 고칠 파일부터 찍어주기 — 5 cards
-2. 요구사항은 3줄로 쪼개기 — 5 cards
-3. 수정 전에 읽기만 시키기 — 5 cards
-4. Agent에게 권한 경계 주기 — 5 cards
-5. “안 돼” 대신 증거를 주기 — 5 cards
-6. 결과 보고 형식을 정해두기 — 5 cards
-7. 자주 쓰는 지시는 템플릿으로 저장 — 5 cards
+1. **scope** — 고칠 파일부터 찍어주기 (작게 맡기기)
+2. **brief** — 요구사항은 3줄로 (목적·제약·확인)
+3. **readfirst** — 수정 전에 읽기만 시키기
+4. **guardrail** — Agent에게 권한 경계 주기
+
+## Source & Build
+- HTML 소스: `Design/project/card_news/vibetip_<topic>_0N.html`
+- 생성 스크립트: `Design/project/card_news/build_vibe_tips.js` (`node build_vibe_tips.js`)
+- PNG 렌더: Chrome 헤드리스
+  `chrome --headless=new --window-size=1080,1080 --screenshot=out.png vibetip_xxx.html`
 
 ## Preview
 
-![contact sheet](contact_sheet_vibe_tips.png)
+![contact sheet](contact_sheet.png)
